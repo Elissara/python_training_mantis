@@ -1,7 +1,7 @@
 import pytest
 import json
 import os.path
-from fixture.application import Application
+from fixturee.application import Application
 
 
 fixture = None
@@ -25,7 +25,6 @@ def app(request):
     web_config = load_config(request.config.getoption("--target"))["web"]
     if fixture is None or not fixture.is_valid():
         fixture = Application(browser=browser, base_url=web_config["baseUrl"])
-    fixture.session.ensure_login(username=web_config["username"], password=web_config["password"])
     return fixture
 
 
