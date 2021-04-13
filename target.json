@@ -11,10 +11,16 @@
     "username": "mantis",
     "password": "mantis"
   },
-    "james": {
+    "db": {
     "host": "localhost",
-    "port": "4555",
-    "username": "root",
-    "password": "root"
-  }
+    "name": "bugtracker2",
+    "user": "root",
+    "password": ""
+  },
+    "james": {
+      "host": "localhost",
+      "port": "4555",
+      "username": "root",
+      "password": "root"
+    }
 }
