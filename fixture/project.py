@@ -30,7 +30,6 @@ class ProjectHelper:
         self.open_create_page()
         self.fill_project_form(project)
         wd.find_element_by_xpath("//input[@value='Add Project']").click()
-        self.open_create_page()
 
     def open_manage_section(self):
         wd = self.app.wd
