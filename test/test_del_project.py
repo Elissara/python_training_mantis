@@ -3,7 +3,6 @@ import random
 
 
 def test_del_project(app):
-    app.session.login("administrator", "root")
     if len(app.soap.get_projects_list()) == 0:
         app.project.create(Project(name="Test_project_007"))
     old_list_of_projects = app.soap.get_projects_list()
